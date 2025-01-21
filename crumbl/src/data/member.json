@@ -1,0 +1,20 @@
+{
+    "team": [
+      {
+        "name": "Assel Syzdykova",
+        "role": "Founder and chef baker",
+        "image": "/images/assel.jpg"
+      },
+      {
+        "name": "asselyok",
+        "role": "Marketing Manager",
+        "image": "/images/assel2.JPEG"
+      },
+      {
+        "name": "asesya",
+        "role": "Culinary consultant",
+        "image": "/images/assel3.JPEG"
+      }
+    ]
+  }
+  
