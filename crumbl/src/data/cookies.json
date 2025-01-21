@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "Semi-Sweet Chocolate Chunk",
+    "description": "Chocolate chip, but make it chunky—a delicious cookie filled with irresistible semi-sweet chocolate chunks and a sprinkle of flaky sea salt.",
+    "image": "images/cookie_choc.jpg",
+    "price": 4.99
+  },
+  {
+    "id": 2,
+    "name": "Mallow Sandwich ft. Oreo",
+    "description": "A fluffy, creamy center with brownie pieces sandwiched between two chocolate cookies made with OREO® cookie pieces. OREO is a trademark of Mondelēz International group, used with permission.",
+    "image": "images/cookie_oreo.jpg",
+    "price": 5.49
+  },
+  {
+    "id": 3,
+    "name": "Salted Caramel Cheesecake",
+    "description": "A caramel cheesecake baked over a buttery graham cracker crust, then topped with a drizzle of caramel, a sprinkle of sea salt, and a dollop of whipped cream.",
+    "image": "images/cookie_cheesecake.jpg",
+    "price": 4.79
+  },
+  {
+    "id": 4,
+    "name": "Galaxy Brownie",
+    "description": "A brownie cookie smothered in a warm fudge glaze and sprinkled with rainbow candy bits.",
+    "image": "images/cookie_galaxy.jpg",
+    "price": 3.99
+  },
+  {
+    "id": 5,
+    "name": "Skillet Cookie",
+    "description": "A warm and gooey semi-sweet chocolate chip cookie, topped with a generous scoop of vanilla bean mousse and a rich drizzle of semi-sweet chocolate.",
+    "image": "images/cookie_skillet.jpg",
+    "price": 4
+  },
+  {
+    "id": 6,
+    "name": "Confetti Cake Cookies",
+    "description": "These Crumbl Confetti Cake Cookies are a soft and delicious sprinkle filled sugar cookie topped with a fluffy pink vanilla cream cheese frosting and extra sprinkles on top. ",
+    "image": "images/cookie_confetti.jpg",
+    "price": 4.50
+  },
+  {
+    "id": 7,
+    "name": "Triple Berry Cobbler",
+    "description": "House-made berry jam nestled in layers of cinnamon streusel and topped with a creamy vanilla bean mousse.",
+    "image": "images/cookies_berry.jpg",
+    "price": 4.80
+  },
+  {
+    "id": 8,
+    "name": "Served Chilled Strawberry Milk ft. Pirouline®",
+    "description": "A chilled strawberry streusel cookie brimming with milky strawberry mousse, topped with a dollop of whipped cream and a crunchy Pirouline® wafer straw.",
+    "image": "images/cookie_strawberry.jpg",
+    "price": 4.60
+  },
+  {
+    "id": 9,
+    "name": "Peanut Butter ft. REESE'S PIECES",
+    "description": "A thick peanut butter cookie packed with irresistible REESE’S PIECES candies. REESE’S PIECES trademark and trade dress are used under license.",
+    "image": "images/cookie_peanut.jpg",
+    "price": 4.75
+  },
+  {
+    "id": 10,
+    "name": "Rob's Backstage Caramel Popcorn Cookie",
+    "description": "A buttery cookie topped with sweet caramel cream cheese frosting, crunchy caramel popcorn pieces, and a light drizzle of melted caramel.",
+    "image": "images/cookie_popcorn.jpg",
+    "price": 4.85
+  },
+  {
+    "id": 11,
+    "name": "Tres Leches Cake",
+    "description": "A lightly spiced cake soaked in a classic tres leches sauce, topped with Lotus Biscoff® cookie butter, fresh whipped cream, Lotus Biscoff® cookie pieces, and a drizzle of melted Lotus Biscoff® cookie butter.",
+    "image": "images/cookie_tres.jpg",
+    "price": 4.79
+  },
+  {
+    "id": 12,
+    "name": "Brookie",
+    "description": "A semi-sweet chocolate chip cookie and a rich chocolate cookie perfectly baked together.",
+    "image": "images/cookie_brookie.jpg",
+    "price": 4.55
+  },
+  {
+    "id": 13,
+    "name": "Sugar ft. Mother’s® Circus Animal",
+    "description": "A rainbow sprinkles cookie smothered with melty white drops then crowned with a Mother’s® Original Circus Animal® Cookie and a splash of rainbow sprinkles.",
+    "image": "images/cookie_sugar.jpg",
+    "price": 4.87
+  }
+]
