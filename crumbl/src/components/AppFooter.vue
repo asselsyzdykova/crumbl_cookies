@@ -1,28 +1,41 @@
 <template>
+  <div class="content">
+    <main>
+    </main>
     <footer>
       <p>&copy; 2025 Crumbl Cookies. All rights reserved.</p>
     </footer>
-  </template>
+  </div>
+</template>
 
-  <script>
-  export default {
-    name: "AppFooter",
-  };
-  </script>
+<script>
+export default {
+  name: "AppFooter",
+};
+</script>
 
 <style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 20vh;
+}
+
+main {
+  flex: 1;
+}
+
 footer {
-  margin-top: 20px;
   padding: 1rem;
   background-color: #f8bbd0;
   color: #880e4f;
-  margin: 0;
   width: 100%;
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
+  text-align: center;
 }
 </style>
-
