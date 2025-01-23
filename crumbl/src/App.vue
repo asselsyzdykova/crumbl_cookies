@@ -5,6 +5,7 @@
       <router-view />
     </main>
     <CartSidebar v-if="cartStore.isCartVisible" />
+    <FAQComponent />
     <AppFooter />
   </div>
 </template>
@@ -14,6 +15,7 @@ import AppHeader from "@/components/AppHeader.vue";
 import AppFooter from "@/components/AppFooter.vue";
 import CartSidebar from "@/components/CartSidebar.vue";
 import { useCartStore } from "@/stores/cartStore";
+import FAQComponent from "@/components/FAQComponent.vue";
 
 export default {
   name: "App",
@@ -21,6 +23,7 @@ export default {
     AppHeader,
     AppFooter,
     CartSidebar,
+    FAQComponent
   },
   data() {
     return {
