@@ -6,6 +6,16 @@
         Your browser does not support video playback.
       </video>
     </div>
+
+    <!-- Новый блок с информацией о коллаборации -->
+    <div class="collaboration">
+      <h2>Exciting Collaboration with Kylie Cosmetics!</h2>
+      <p>
+        We are thrilled to announce our exclusive partnership with Kylie Cosmetics.
+        Together, we bring you a unique blend of beauty and flavor, showcasing our commitment to innovation and creativity.
+      </p>
+    </div>
+
     <div class="team">
       <h2>Our team</h2>
       <div class="team-members">
@@ -61,6 +71,29 @@ h1 {
   box-shadow: none;
 }
 
+/* Стили для блока с коллаборацией */
+.collaboration {
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #ff6f61;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collaboration h2 {
+  font-size: 1.8rem;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.collaboration p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
 .team {
   margin-top: 60px;
 }
@@ -106,6 +139,10 @@ h1 {
   .about-video {
     width: 100%;
     height: auto;
+  }
+
+  .collaboration {
+    padding: 15px;
   }
 }
 
