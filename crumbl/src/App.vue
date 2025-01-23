@@ -36,10 +36,24 @@ export default {
 <style>
 #app {
   font-family: Arial, sans-serif;
-  text-align: center;
   color: #333;
 }
+
 main {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 20vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
+
