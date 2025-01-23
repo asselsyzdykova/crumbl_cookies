@@ -1,5 +1,6 @@
 <template>
   <div class="feedback-view">
+  
     <h1>Your Reviews for Crumbl Cookies</h1>
     <p>We want to know what you think of our cookies! Share your impressions!</p>
 
@@ -29,13 +30,30 @@
           <h3>{{ review.name }}</h3>
           <p><strong>Score:</strong> {{ review.rating }} / 5</p>
           <p>{{ review.comment }}</p>
+          <button @click="deleteReview(index)">Delete</button>
         </div>
       </div>
       <p v-else>No reviews yet. Be the first!</p>
     </div>
+
+    <div class="tiktok-section">
+      <h2>What our customers say on TikTok</h2>
+      <div class="tiktok-video-wrapper">
+        <iframe
+          :src="currentVideo"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="tiktok-video"
+        ></iframe>
+      </div>
+      <div class="navigation-buttons">
+        <button @click="prevVideo" :disabled="currentIndex === 0">Previous</button>
+        <button @click="nextVideo" :disabled="currentIndex === videos.length - 1">Next</button>
+      </div>
+    </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "FeedbackView",
@@ -46,8 +64,19 @@ export default {
         rating: 1,
         comment: ''
       },
-      reviews: this.loadReviews()
+      reviews: this.loadReviews(),
+      videos: [
+        '/videos/kylie.MP4',
+        '/videos/lily.mp4',
+        '/videos/miller.MP4'
+      ],
+      currentIndex: 0
     };
+  },
+  computed: {
+    currentVideo() {
+      return this.videos[this.currentIndex];
+    }
   },
   methods: {
     submitReview() {
@@ -65,6 +94,20 @@ export default {
     loadReviews() {
       const savedReviews = localStorage.getItem('reviews');
       return savedReviews ? JSON.parse(savedReviews) : [];
+    },
+    deleteReview(index) {
+      this.reviews.splice(index, 1);
+      this.saveReviews();
+    },
+    prevVideo() {
+      if (this.currentIndex > 0) {
+        this.currentIndex--;
+      }
+    },
+    nextVideo() {
+      if (this.currentIndex < this.videos.length - 1) {
+        this.currentIndex++;
+      }
     }
   }
 };
@@ -88,7 +131,6 @@ h1 {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 10;
 }
 
 h2 {
@@ -214,6 +256,57 @@ button:hover {
   font-style: italic;
 }
 
+.tiktok-section {
+  margin-top: 50px;
+  background-color: #f8f8f8;
+  padding: 30px 20px;
+  border-radius: 12px;
+}
+
+.tiktok-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.tiktok-video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.tiktok-video {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+}
+
+.navigation-buttons {
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.navigation-buttons button:hover:not(:disabled) {
+  background-color: #e55a47;
+}
+
 @media (max-width: 768px) {
   .feedback-view {
     padding: 20px;
@@ -225,6 +318,10 @@ button:hover {
 
   .review-item {
     padding: 15px;
+  }
+
+  .tiktok-video {
+    height: 300px;
   }
 }
 
